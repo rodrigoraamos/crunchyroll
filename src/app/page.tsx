@@ -90,16 +90,7 @@ export default function Home() {
       <div className="bg-primary text-primary-foreground text-center py-2 text-sm font-bold">
         Desconto apenas HOJE nesta página: 01/08/2025
       </div>
-      <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
-          <a href="#" className="flex items-center gap-2 font-bold text-lg">
-            <Crown className="h-7 w-7 text-primary" />
-            <span className="font-headline">Rei Dos Apps</span>
-          </a>
-          <Button>QUERO GARANTIR MEU COMBO</Button>
-        </div>
-      </header>
-
+      
       <main className="flex-1">
         <section className="py-16 md:py-24 lg:py-32">
           <div className="container mx-auto max-w-4xl px-4 text-center">
@@ -351,3 +342,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
