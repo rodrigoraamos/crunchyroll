@@ -2,6 +2,7 @@
 'use client';
 
 import Image from "next/image";
+import Script from "next/script";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -109,6 +110,18 @@ export default function Home() {
               Assista TODOS os seus animes favoritos sem anúncios, em HD, offline e com lançamentos no mesmo dia do Japão
             </p>
             <div className="mt-8 flex flex-col items-center gap-6">
+               <div className="w-full max-w-2xl mx-auto">
+                <div id="vid_688cc51742446e639fafab62" style={{position: 'relative', width: '100%', padding: '176.66666666666666% 0 0'}}>
+                    <img id="thumb_688cc51742446e639fafab62" src="https://images.converteai.net/d5647b15-021e-4678-89a8-e5966099f778/players/688cc51742446e639fafab62/thumbnail.jpg" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block'}} alt="thumbnail" />
+                    <div id="backdrop_688cc51742446e639fafab62" style={{backdropFilter: 'blur(5px)', position: 'absolute', top: 0, height: '100%', width: '100%'}}></div>
+                </div>
+                <Script 
+                    id="scr_688cc51742446e639fafab62" 
+                    src="https://scripts.converteai.net/d5647b15-021e-4678-89a8-e5966099f778/players/688cc51742446e639fafab62/player.js" 
+                    strategy="afterInteractive" 
+                />
+              </div>
+
               <Button size="lg" className="text-lg font-black rounded-xl px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
                  🚀 QUERO MEU ACESSO AGORA! <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
