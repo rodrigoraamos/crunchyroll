@@ -15,6 +15,8 @@ const SalesNotification = () => {
   const [usedNames, setUsedNames] = useState<string[]>([]);
 
   useEffect(() => {
+    let timeoutId: NodeJS.Timeout;
+
     const generateNotification = () => {
       let fullName = '';
       let availableNames = firstNames.filter(name => !usedNames.includes(name));
@@ -34,22 +36,18 @@ const SalesNotification = () => {
       setNotification({ name: fullName, plan });
       setVisible(true);
 
-      setTimeout(() => {
+      // Fica visível por 5 segundos
+      timeoutId = setTimeout(() => {
         setVisible(false);
-      }, 5000); // Fica visível por 5 segundos
+        // Agenda a proxima notificação para 15 segundos depois
+        timeoutId = setTimeout(generateNotification, 15000); 
+      }, 5000); 
     };
 
-    const initialTimeout = setTimeout(() => {
-        generateNotification();
-        const interval = setInterval(() => {
-            generateNotification();
-        }, 20000); // Gera uma nova notificação a cada 20 segundos
+    // Inicia o ciclo após um delay inicial
+    timeoutId = setTimeout(generateNotification, 10000);
 
-        return () => clearInterval(interval);
-    }, 10000)
-
-
-    return () => clearTimeout(initialTimeout);
+    return () => clearTimeout(timeoutId);
   }, [usedNames]);
 
   if (!visible) {
