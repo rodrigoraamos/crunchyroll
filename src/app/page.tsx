@@ -176,8 +176,8 @@ export default function Home() {
                         </ul>
                     </CardContent>
                     <div className="p-6 pt-0">
-                        <Button className="w-full text-lg font-black rounded-full py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
-                            QUERO ESSA OPÇÃO
+                        <Button className="w-full text-lg font-black rounded-full py-6 text-primary-foreground" style={{ backgroundColor: '#FF6A00' }}>
+                            👉 QUERO ESSA OPÇÃO
                         </Button>
                     </div>
                 </Card>
@@ -306,5 +306,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
