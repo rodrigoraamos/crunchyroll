@@ -191,7 +191,7 @@ export default function Home() {
                                 {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />)}
                             </div>
                             <CardTitle className="text-2xl font-black">PLANO COMPLETO</CardTitle>
-                            <CardDescription className="text-4xl font-black text-white pt-2">R$27,00</CardDescription>
+                            <CardDescription className="text-4xl font-black pt-2" style={{ color: '#facc15' }}>R$27,00</CardDescription>
                             <p className="text-base font-black text-muted-foreground">🎁 BÔNUS EXCLUSIVOS</p>
                         </CardHeader>
                         <CardContent className="flex-grow pt-6">
