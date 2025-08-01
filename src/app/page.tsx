@@ -158,31 +158,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto max-w-4xl px-4 text-center">
-             <div className="inline-flex items-center bg-primary/10 rounded-full px-4 py-1 text-sm font-semibold text-primary mb-4">
-                <MessageSquare className="h-4 w-4 mr-2" />
-                 Depoimentos Reais de Clientes
-              </div>
-              <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground">
-                Veja o que nossos clientes estão dizendo sobre o Combo Premium.
-              </p>
-               <div className="mt-8 flex flex-col items-center gap-6">
-                 <Card className="overflow-hidden shadow-lg w-full max-w-sm mx-auto border-gray-200 border-4 rounded-3xl">
-                     <div className="relative aspect-[9/19] cursor-pointer group">
-                         <Image
-                             src="https://placehold.co/400x800.png"
-                             alt="Testimonial screenshot"
-                             fill
-                             className="object-cover"
-                             data-ai-hint="app testimonial chat"
-                         />
-                     </div>
-                 </Card>
-            </div>
-          </div>
-        </section>
-
         <section id="planos" className="bg-muted py-16 md:py-24">
           <div className="container mx-auto max-w-5xl px-4">
             <div className="text-center mb-12">
