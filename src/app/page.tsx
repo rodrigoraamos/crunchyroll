@@ -225,7 +225,7 @@ export default function Home() {
                         </CardContent>
                         <div className="p-6 pt-0">
                              <a href="https://checkoutdigital.shop/checkout-white-6837/?add-to-cart=6837" className="w-full block">
-                                <Button className="w-full text-lg font-black rounded-xl px-4 py-6 bg-green-500 hover:bg-green-600 text-white whitespace-normal h-auto">
+                                <Button className="w-full text-lg font-black rounded-xl px-4 py-4 bg-green-500 hover:bg-green-600 text-white whitespace-normal h-auto">
                                     🚀 SIM, QUERO O COMBO COMPLETO
                                 </Button>
                             </a>
@@ -328,3 +328,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
