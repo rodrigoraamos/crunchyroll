@@ -140,7 +140,7 @@ export default function Home() {
                         </ul>
                     </div>
                      <div className="flex justify-center items-center">
-                        <Image src="https://placehold.co/600x400.png" alt="Anime characters collage" width={500} height={350} className="rounded-lg shadow-md" data-ai-hint="anime characters collage" />
+                        <Image src="https://i.imgur.com/eSeozeF.png" alt="Anime characters collage" width={500} height={350} className="rounded-lg shadow-md" data-ai-hint="video player" />
                     </div>
                 </div>
             </Card>
@@ -306,3 +306,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
