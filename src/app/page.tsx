@@ -203,15 +203,8 @@ export default function Home() {
                                     </li>
                                ))}
                             </ul>
-                             <div className="grid grid-cols-4 gap-4 justify-items-center">
-                                 <Image src="https://placehold.co/100x100.png" alt="HBO" width={50} height={50} className="grayscale" data-ai-hint="hbo logo" />
-                                 <Image src="https://placehold.co/100x100.png" alt="Prime Video" width={50} height={50} className="grayscale" data-ai-hint="prime video logo" />
-                                 <Image src="https://placehold.co/100x100.png" alt="Star+" width={50} height={50} className="grayscale" data-ai-hint="star plus logo" />
-                                  <Image src="https://placehold.co/100x100.png" alt="Disney+" width={50} height={50} className="grayscale" data-ai-hint="disney plus logo" />
-                                 <Image src="https://placehold.co/100x100.png" alt="Netflix" width={50} height={50} className="grayscale" data-ai-hint="netflix logo" />
-                                  <Image src="https://placehold.co/100x100.png" alt="Paramount+" width={50} height={50} className="grayscale" data-ai-hint="paramount plus logo" />
-                                 <Image src="https://placehold.co/100x100.png" alt="Apple TV+" width={50} height={50} className="grayscale" data-ai-hint="apple tv logo" />
-                                  <Image src="https://placehold.co/100x100.png" alt="YouTube Premium" width={50} height={50} className="grayscale" data-ai-hint="youtube logo" />
+                            <div className="flex justify-center mt-4">
+                                <Image src="https://i.imgur.com/W82YUws.png" alt="Plataformas de streaming" width={300} height={50} />
                             </div>
                         </CardContent>
                         <div className="p-6 pt-0">
@@ -313,3 +306,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
