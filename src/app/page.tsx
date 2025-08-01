@@ -3,31 +3,42 @@
 
 import Image from "next/image";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Check, Crown, Gamepad2, PlayCircle, Star, Tv, Smartphone, Tablet, Laptop, GitCompareArrows, MessageCircle, Box, Sparkles, Film, X, ShieldCheck, Zap, Lock } from "lucide-react";
+import { Check, ArrowRight, Star, GitMerge, MessageSquare, Box, Wand2, Tv, Shield, Zap, CircleHelp, HandCoins, Clock, Sparkles, CheckCircle2 } from "lucide-react";
 
-const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-  </svg>
+
+const IconCard = ({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) => (
+    <div className="flex flex-col items-center text-center gap-2">
+        <div className="p-3 bg-primary/10 rounded-full">
+            {icon}
+        </div>
+        <h3 className="font-bold text-lg">{title}</h3>
+        <p className="text-muted-foreground text-sm">{description}</p>
+    </div>
 );
 
+
+const AppleIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" {...props}>
+        <path d="M12.671 2.12a5.038 5.038 0 00-2.235.516c-1.396.726-2.422 2.21-2.586 3.993-.146 1.62.7 3.244 1.814 4.29a4.426 4.426 0 00-1.42 3.442c.012 2.404 1.942 4.493 4.34 4.622a5.39 5.39 0 00.83.023c.82 0 1.62-.243 2.28-.686a5.617 5.617 0 001.95-1.577c.43-.58.74-1.256.932-1.986a10.02 10.02 0 01-.31-2.148c.112-2.413-1.48-4.48-3.6-5.266a4.89 4.89 0 00-2.005-.31z" /><path d="M14.65 2.25c-.75.01-1.49.2-2.17.54a4.42 4.42 0 00-1.9 1.59C9.4 6.01 9.88 7.93 11.23 8.9c.7.5 1.55.77 2.43.72a3.8 3.8 0 002.8-1.53c1.1-1.46.99-3.48-.25-4.82a3.47 3.47 0 00-1.56-.8z" />
+    </svg>
+)
+
+const GooglePlayIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" {...props}>
+        <path d="M20.62 12.38a1.55 1.55 0 010-1.12l-7-3.95-3.8 3.8 10.8 5.27z" /><path d="M3.38 3.73L9.82 12l-6.44 8.27a1.47 1.47 0 01-.1-2.07L3.38 3.73z" /><path d="M20.62 12.38L9.82 12l-3.8-3.8L13.62 3l7 5.43a1.55 1.55 0 010 3.95z" /><path d="M9.82 12l-3.8 3.8 7.6 4.25 7-3.95a1.55 1.55 0 010-1.12L9.82 12z" />
+    </svg>
+)
+const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" {...props}>
+        <path d="M16.6 14.2c-.2-.1-1.5-0.7-1.7-0.8-.2-.1-.4-.1-.6.1-.2.2-.6.7-.8.9-.1.1-.3.2-.5.1-.2-.1-.9-.3-1.8-1.1-.7-.6-1.1-1.4-1.3-1.6s0-.3.1-.4c.1-.1.2-.2.4-.4.1-.1.2-.2.2-.4.1-.1 0-.3-.1-.4-.1-.1-.6-1.3-.8-1.8-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2 1 2.4c.1.1 1.5 2.3 3.7 3.2.5.2.9.4 1.2.5.5.2.9.1 1.2-.1.4-.2 1.2-.5 1.3-1 .1-.5.1-1 0-1.1-.1-.1-.2-.2-.4-.3zM12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z" />
+    </svg>
+);
+
+
 export default function Home() {
+
   const features = [
     'Acesso ilimitado a todos os animes da plataforma',
     'Lançamentos simultâneos com o Japão',
@@ -36,23 +47,7 @@ export default function Home() {
     'Assista em até 4 dispositivos ao mesmo tempo',
     'Baixe e assista offline',
     'Catálogo com mais de 1.000 títulos',
-  ];
-
-  const devices = [
-    { icon: <Tv className="h-6 w-6 text-primary" />, name: 'Smart TVs' },
-    { icon: <Smartphone className="h-6 w-6 text-primary" />, name: 'Celular' },
-    { icon: <Tablet className="h-6 w-6 text-primary" />, name: 'Tablet' },
-    { icon: <Laptop className="h-6 w-6 text-primary" />, name: 'PC' },
-    { icon: <Gamepad2 className="h-6 w-6 text-primary" />, name: 'Videogames' },
-  ];
-
-  const testimonials = [
-    { name: "Cliente 5", quote: "Depoimento de um cliente 5", aiHint: "person portrait" },
-    { name: "Cliente 6", quote: "Depoimento de um cliente 6", aiHint: "person smiling" },
-    { name: "Cliente 1", quote: "Depoimento de um cliente 1", aiHint: "person glasses" },
-    { name: "Cliente 2", quote: "Depoimento de um cliente 2", aiHint: "person happy" },
-    { name: "Cliente 3", quote: "Depoimento de um cliente 3", aiHint: "person excited" },
-    { name: "Cliente 4", quote: "Depoimento de um cliente 4", aiHint: "person content" },
+    'Funciona em Smart TVs, celular, tablet, PC e videogames'
   ];
 
   const faqs = [
@@ -78,236 +73,246 @@ export default function Home() {
     }
   ];
 
-  const bonus = [
-    { icon: <GitCompareArrows className="h-8 w-8 text-primary" />, text: 'Acesso vitalício' },
-    { icon: <MessageCircle className="h-8 w-8 text-primary" />, text: 'Suporte VIP 24/7' },
-    { icon: <Box className="h-8 w-8 text-primary" />, text: 'Atualizações de lançamentos' },
-    { icon: <Sparkles className="h-8 w-8 text-primary" />, text: 'Novas plataformas futuras' },
+  const planBasicFeatures = [
+      'Crunchyroll MEGA FAN, por 1 ano, sem interrupções',
+      'Android + IOS + desktop',
+      'Garantia de 7 dias',
+      'Acesso imediato'
+  ];
+
+  const planCompleteFeatures = [
+      { icon: <GitMerge className="h-5 w-5 text-primary"/>, text: 'Acesso vitalício' },
+      { icon: <MessageSquare className="h-5 w-5 text-primary"/>, text: 'Suporte VIP 24/7' },
+      { icon: <Box className="h-5 w-5 text-primary"/>, text: 'Atualizações de lançamentos' },
+      { icon: <Wand2 className="h-5 w-5 text-primary"/>, text: 'Novas plataformas futuras' },
+      { icon: <CheckCircle2 className="h-5 w-5 text-green-500"/>, text: 'Tudo do plano básico' },
   ];
 
   return (
-    <div className="flex min-h-dvh flex-col bg-background text-foreground font-body">
+    <div className="flex min-h-dvh flex-col bg-background text-foreground font-sans">
       <div className="bg-primary text-primary-foreground text-center py-2 text-sm font-bold">
         Desconto apenas HOJE nesta página: 01/08/2025
       </div>
       
       <main className="flex-1">
-        <section className="py-16 md:py-24 lg:py-32">
+        <section className="py-12 md:py-20 lg:py-24">
           <div className="container mx-auto max-w-4xl px-4 text-center">
-            <Badge variant="destructive" className="mb-4 text-base font-semibold">
-              <span className="mr-2">🔥</span> OFERTA LIMITADA
-            </Badge>
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl font-headline">
+            <div className="inline-flex items-center bg-primary-foreground border border-primary/20 rounded-full px-4 py-1 text-sm font-semibold text-primary mb-4">
+              <Sparkles className="h-4 w-4 mr-2 text-primary" /> OFERTA LIMITADA
+            </div>
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-gray-800">
               1 Ano de Crunchyroll Premium MEGA FAN Por Apenas <span className="text-primary">R$10.00</span>
             </h1>
-            <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
               Assista TODOS os seus animes favoritos sem anúncios, em HD, offline e com lançamentos no mesmo dia do Japão
             </p>
             <div className="mt-8 flex flex-col items-center gap-6">
-              <p className="font-semibold text-lg">▶️ Assista ao vídeo abaixo para entender:</p>
-              <Card className="overflow-hidden shadow-lg w-full">
-                <div className="relative aspect-video cursor-pointer group">
-                  <Image
-                    src="https://placehold.co/1280x720.png"
-                    alt="Anime montage video"
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    data-ai-hint="anime montage"
-                  />
-                  <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                    <PlayCircle className="h-20 w-20 text-white/80 transition-all group-hover:text-white group-hover:scale-110" />
+              <Card className="overflow-hidden shadow-lg w-full max-w-sm mx-auto border-gray-200 border-4 rounded-3xl">
+                  <div className="relative aspect-[9/19] cursor-pointer group">
+                      <Image
+                          src="https://placehold.co/400x800.png"
+                          alt="App Screenshot"
+                          fill
+                          className="object-cover"
+                          data-ai-hint="app screenshot mobile"
+                      />
                   </div>
-                </div>
               </Card>
-              <Button size="lg" className="text-lg animate-pulse">
-                <span className="mr-2">🚀</span> QUERO MEU ACESSO AGORA!
+              <Button size="lg" className="text-lg font-bold rounded-full px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
+                 QUERO MEU ACESSO AGORA! <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
           </div>
         </section>
 
-        <section className="bg-muted/60 py-16 md:py-24 lg:py-32">
+        <section className="bg-muted py-16 md:py-24">
           <div className="container mx-auto max-w-5xl px-4">
-            <div className="text-center">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">🎁 O Que Você Vai Receber</h2>
-              <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+            <div className="text-center mb-12">
+               <div className="inline-flex items-center bg-primary/10 rounded-full px-4 py-1 text-sm font-semibold text-primary mb-4">
+                <Box className="h-4 w-4 mr-2" />
+                 O Que Você Vai Receber
+              </div>
+              <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground">
                 Acesso completo à melhor plataforma de animes do mundo.
               </p>
             </div>
-            <div className="mt-12 grid gap-8 md:grid-cols-2">
-              <div className="flex justify-center items-center">
-                <Image src="https://placehold.co/600x400.png" alt="Anime characters" width={600} height={400} className="rounded-lg shadow-lg" data-ai-hint="anime characters collage" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-4 font-headline">🟧 Com o plano Crunchyroll Premium você terá:</h3>
-                <ul className="space-y-3">
-                  {features.map((feature, index) => (
-                    <li key={index} className="flex items-center gap-3">
-                      <Check className="h-6 w-6 text-green-500 flex-shrink-0" />
-                      <span className="text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-8">
-                   <h3 className="text-xl font-bold mb-4 font-headline">📱 Funciona em:</h3>
-                   <div className="flex flex-wrap gap-4">
-                        {devices.map(device => (
-                            <div key={device.name} className="flex items-center gap-2 p-2 bg-background rounded-md">
-                                {device.icon}
-                                <span className="font-semibold">{device.name}</span>
-                            </div>
-                        ))}
-                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 md:py-24 lg:py-32">
-          <div className="container mx-auto max-w-7xl px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">💬 Depoimentos Reais de Clientes</h2>
-              <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-                Veja o que nossos clientes estão dizendo sobre o Combo Premium.
-              </p>
-            </div>
-            <Carousel opts={{ align: "start", loop: true, }} className="w-full max-w-5xl mx-auto">
-              <CarouselContent>
-                {testimonials.map((testimonial, index) => (
-                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                    <div className="p-1">
-                      <Card className="h-full">
-                        <CardContent className="flex flex-col items-center text-center p-6">
-                          <Avatar className="w-20 h-20 mb-4">
-                            <AvatarImage src={`https://placehold.co/100x100.png`} alt={testimonial.name} data-ai-hint={testimonial.aiHint} />
-                            <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                          </Avatar>
-                          <div className="flex my-2">
-                            {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 text-accent fill-accent" />)}
-                          </div>
-                          <p className="text-muted-foreground flex-grow">&ldquo;{testimonial.quote}&rdquo;</p>
-                          <p className="mt-4 font-semibold text-foreground">- {testimonial.name}</p>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div>
-        </section>
-
-        <section id="planos" className="bg-muted/60 py-16 md:py-24 lg:py-32">
-          <div className="container mx-auto max-w-7xl px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">💸 Escolha o Plano Perfeito Para Você</h2>
-              <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-                Oferta por tempo limitado. Aproveite agora!
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
-                <Card className="flex flex-col">
-                    <CardHeader className="text-center">
-                        <CardTitle className="text-2xl font-bold font-headline">PLANO BÁSICO</CardTitle>
-                        <CardDescription className="text-4xl font-bold text-primary">R$10,00</CardDescription>
-                    </CardHeader>
-                    <CardContent className="flex-grow">
-                        <p className="text-center font-semibold mb-4">1 Ano Sem Preocupações</p>
-                        <ul className="space-y-2 text-muted-foreground">
-                            <li className="flex items-center gap-2"><Check className="h-5 w-5 text-green-500" /> Crunchyroll MEGA FAN, por 1 ano, sem interrupções</li>
-                            <li className="flex items-center gap-2"><Check className="h-5 w-5 text-green-500" /> Android + IOS + desktop</li>
-                            <li className="flex items-center gap-2"><Check className="h-5 w-5 text-green-500" /> Garantia de 7 dias</li>
-                            <li className="flex items-center gap-2"><Check className="h-5 w-5 text-green-500" /> Acesso imediato</li>
-                        </ul>
-                    </CardContent>
-                    <div className="p-6 pt-0">
-                        <Button className="w-full text-lg">👉 QUERO ESSA OPÇÃO</Button>
-                    </div>
-                </Card>
-                <Card className="border-2 border-primary relative flex flex-col">
-                    <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary">Mais Vendido ⭐⭐⭐⭐⭐</Badge>
-                    <CardHeader className="text-center">
-                        <CardTitle className="text-2xl font-bold font-headline">PLANO COMPLETO</CardTitle>
-                        <CardDescription className="text-4xl font-bold text-primary">R$27,00</CardDescription>
-                    </CardHeader>
-                    <CardContent className="flex-grow">
-                        <p className="text-center font-semibold mb-4">🎁 Bônus Exclusivos:</p>
-                        <div className="grid grid-cols-2 gap-4 text-center mb-4">
-                            {bonus.map(b => (
-                                <div key={b.text} className="flex flex-col items-center gap-1">
-                                    {b.icon}
-                                    <span className="text-sm text-muted-foreground">{b.text}</span>
-                                </div>
+            <Card className="p-8 rounded-2xl shadow-lg">
+                <div className="grid gap-6 md:grid-cols-2 items-center">
+                    <div className="space-y-4">
+                        <h3 className="text-xl font-bold">🟧 Com o plano Crunchyroll Premium você terá:</h3>
+                         <ul className="space-y-3">
+                            {features.map((feature, index) => (
+                                <li key={index} className="flex items-center gap-3">
+                                <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0" />
+                                <span className="text-muted-foreground">{feature}</span>
+                                </li>
                             ))}
-                        </div>
-                        <ul className="space-y-2 text-muted-foreground">
-                            <li className="flex items-center gap-2"><Check className="h-5 w-5 text-green-500" /> Tudo do plano básico</li>
-                            <li className="flex items-center gap-2"><Film className="h-5 w-5 text-green-500" /> Combo Streaming</li>
                         </ul>
-                    </CardContent>
-                    <div className="p-6 pt-0">
-                        <Button className="w-full text-lg animate-pulse">🚀 SIM! QUERO O COMBO COMPLETO</Button>
                     </div>
-                </Card>
-            </div>
-             <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center max-w-5xl mx-auto">
-                <Card>
-                    <CardHeader>
-                        <CardTitle className="text-xl font-headline">Garantia de 7 dias</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground">Reembolso total se não gostar.</p>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <CardHeader>
-                        <CardTitle className="text-xl font-headline">Acesso imediato</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground">Em até 5 minutos após a compra.</p>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <CardHeader>
-                        <CardTitle className="text-xl font-headline">Suporte</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground">WhatsApp: (11) 95331-2416</p>
-                    </CardContent>
-                </Card>
-            </div>
+                     <div className="flex justify-center items-center">
+                        <Image src="https://placehold.co/600x400.png" alt="Anime characters collage" width={500} height={350} className="rounded-lg shadow-md" data-ai-hint="anime characters collage" />
+                    </div>
+                </div>
+            </Card>
           </div>
         </section>
 
         <section className="py-16 md:py-24">
-          <div className="container mx-auto max-w-4xl px-4">
-            <div className="bg-card p-8 md:p-12 rounded-2xl shadow-lg text-center">
-              <h2 className="text-2xl md:text-3xl font-bold font-headline">Ainda tem dúvidas?</h2>
-              <p className="mt-2 text-lg text-muted-foreground">Fale conosco diretamente pelo WhatsApp. Estamos aqui para ajudar!</p>
-              <Button size="lg" className="text-lg mt-6 bg-green-500 hover:bg-green-600 text-white">
-                <WhatsAppIcon className="mr-2 h-6 w-6" />
-                Dúvidas e Suporte via WhatsApp
-              </Button>
+          <div className="container mx-auto max-w-4xl px-4 text-center">
+             <div className="inline-flex items-center bg-primary/10 rounded-full px-4 py-1 text-sm font-semibold text-primary mb-4">
+                <MessageSquare className="h-4 w-4 mr-2" />
+                 Depoimentos Reais de Clientes
+              </div>
+              <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground">
+                Veja o que nossos clientes estão dizendo sobre o Combo Premium.
+              </p>
+               <div className="mt-8 flex flex-col items-center gap-6">
+                 <Card className="overflow-hidden shadow-lg w-full max-w-sm mx-auto border-gray-200 border-4 rounded-3xl">
+                     <div className="relative aspect-[9/19] cursor-pointer group">
+                         <Image
+                             src="https://placehold.co/400x800.png"
+                             alt="Testimonial screenshot"
+                             fill
+                             className="object-cover"
+                             data-ai-hint="app testimonial chat"
+                         />
+                     </div>
+                 </Card>
+            </div>
+          </div>
+        </section>
+
+        <section id="planos" className="bg-muted py-16 md:py-24">
+          <div className="container mx-auto max-w-5xl px-4">
+            <div className="text-center mb-12">
+               <div className="inline-flex items-center bg-primary/10 rounded-full px-4 py-1 text-sm font-semibold text-primary mb-4">
+                <HandCoins className="h-4 w-4 mr-2" />
+                 Escolha o Plano Perfeito Para Você
+              </div>
+              <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground">
+                Oferta por tempo limitado. Aproveite agora!
+              </p>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
+                <Card className="flex flex-col p-6 rounded-2xl border-2">
+                    <CardHeader className="text-center p-2">
+                        <CardTitle className="text-xl font-bold text-gray-700">PLANO BÁSICO</CardTitle>
+                        <CardDescription className="text-4xl font-bold text-primary pt-2">R$10,00</CardDescription>
+                         <p className="text-muted-foreground text-sm">1 Ano Sem Preocupações</p>
+                    </CardHeader>
+                    <CardContent className="flex-grow pt-6">
+                        <ul className="space-y-3">
+                           {planBasicFeatures.map((feature, index) => (
+                                <li key={index} className="flex items-center gap-3">
+                                <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0" />
+                                <span className="text-muted-foreground text-sm">{feature}</span>
+                                </li>
+                           ))}
+                        </ul>
+                    </CardContent>
+                    <div className="p-6 pt-0">
+                        <Button className="w-full text-lg font-bold rounded-full py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
+                            QUERO ESSA OPÇÃO
+                        </Button>
+                    </div>
+                </Card>
+                <div className="dark">
+                    <Card className="flex flex-col p-6 rounded-2xl border-2 border-primary relative overflow-visible">
+                         <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary px-4 py-1 rounded-full text-sm font-bold text-primary-foreground flex items-center gap-2">
+                             <Star className="w-4 h-4" /> RECOMENDADO
+                        </div>
+                        <CardHeader className="text-center p-2">
+                            <div className="flex justify-center my-2">
+                                {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />)}
+                            </div>
+                            <CardTitle className="text-xl font-bold">PLANO COMPLETO</CardTitle>
+                            <CardDescription className="text-4xl font-bold text-white pt-2">R$27,00</CardDescription>
+                            <p className="text-muted-foreground text-sm font-bold">🎁 BÔNUS EXCLUSIVOS</p>
+                        </CardHeader>
+                        <CardContent className="flex-grow pt-6">
+                             <ul className="space-y-3 mb-4">
+                               {planCompleteFeatures.map((feat, index) => (
+                                    <li key={index} className="flex items-center gap-3">
+                                    {feat.icon}
+                                    <span className="text-sm">{feat.text}</span>
+                                    </li>
+                               ))}
+                            </ul>
+                            <div className="text-left font-semibold my-4 flex items-center gap-2">
+                                <CheckCircle2 className="h-5 w-5 text-green-500"/> Combo Streaming:
+                            </div>
+                             <div className="grid grid-cols-4 gap-4 justify-items-center">
+                                 <Image src="https://placehold.co/100x100.png" alt="HBO" width={50} height={50} className="grayscale" data-ai-hint="hbo logo" />
+                                 <Image src="https://placehold.co/100x100.png" alt="Prime Video" width={50} height={50} className="grayscale" data-ai-hint="prime video logo" />
+                                 <Image src="https://placehold.co/100x100.png" alt="Star+" width={50} height={50} className="grayscale" data-ai-hint="star plus logo" />
+                                  <Image src="https://placehold.co/100x100.png" alt="Disney+" width={50} height={50} className="grayscale" data-ai-hint="disney plus logo" />
+                                 <Image src="https://placehold.co/100x100.png" alt="Netflix" width={50} height={50} className="grayscale" data-ai-hint="netflix logo" />
+                                  <Image src="https://placehold.co/100x100.png" alt="Paramount+" width={50} height={50} className="grayscale" data-ai-hint="paramount plus logo" />
+                                 <Image src="https://placehold.co/100x100.png" alt="Apple TV+" width={50} height={50} className="grayscale" data-ai-hint="apple tv logo" />
+                                  <Image src="https://placehold.co/100x100.png" alt="YouTube Premium" width={50} height={50} className="grayscale" data-ai-hint="youtube logo" />
+                            </div>
+                        </CardContent>
+                        <div className="p-6 pt-0">
+                             <Button className="w-full text-lg font-bold rounded-full py-6 bg-green-500 hover:bg-green-600 text-white">
+                                SIM, QUERO O COMBO COMPLETO
+                            </Button>
+                        </div>
+                    </Card>
+                </div>
             </div>
           </div>
         </section>
         
-        <section className="bg-muted/60 py-16 md:py-24 lg:py-32">
-          <div className="container mx-auto max-w-4xl px-4">
+        <section className="py-16 md:py-24">
+             <div className="container mx-auto max-w-5xl px-4 grid md:grid-cols-3 gap-8">
+                <IconCard
+                    icon={<Shield className="h-8 w-8 text-primary"/>}
+                    title="Garantia de 7 dias"
+                    description="Reembolso total se não gostar."
+                />
+                 <IconCard
+                    icon={<Clock className="h-8 w-8 text-primary"/>}
+                    title="Acesso imediato"
+                    description="Em até 5 minutos após a compra."
+                />
+                 <IconCard
+                    icon={<Tv className="h-8 w-8 text-primary"/>}
+                    title="Suporte"
+                    description="WhatsApp: (11) 95331-2416"
+                />
+            </div>
+        </section>
+
+        <section className="bg-muted py-16 md:py-24">
+          <div className="container mx-auto max-w-2xl px-4 text-center">
+             <div className="inline-flex items-center bg-primary/10 rounded-full p-3 text-primary mb-4">
+                <WhatsAppIcon className="h-8 w-8" />
+              </div>
+              <h2 className="text-3xl font-bold">Ainda tem dúvidas?</h2>
+              <p className="mt-2 text-lg text-muted-foreground">Fale conosco diretamente pelo WhatsApp. Estamos aqui para ajudar!</p>
+              <Button size="lg" className="text-lg mt-6 bg-green-500 hover:bg-green-600 text-white rounded-full font-bold px-8 py-6">
+                <WhatsAppIcon className="mr-2 h-5 w-5" />
+                Dúvidas e Suporte via WhatsApp
+              </Button>
+          </div>
+        </section>
+        
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto max-w-3xl px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">❓ Perguntas Frequentes</h2>
-              <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+               <div className="inline-flex items-center bg-primary/10 rounded-full px-4 py-1 text-sm font-semibold text-primary mb-4">
+                <CircleHelp className="h-4 w-4 mr-2" />
+                 Perguntas Frequentes
+              </div>
+              <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground">
                 Tiramos todas as suas dúvidas para você comprar com tranquilidade.
               </p>
             </div>
-            <Accordion type="single" collapsible className="w-full">
+            <Accordion type="single" collapsible className="w-full space-y-4">
               {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index + 1}`}>
-                  <AccordionTrigger className="text-lg font-semibold text-left">{faq.question}</AccordionTrigger>
-                  <AccordionContent className="text-base text-muted-foreground">
+                <AccordionItem key={index} value={`item-${index + 1}`} className="bg-white border-b-0 rounded-xl shadow-sm">
+                  <AccordionTrigger className="text-lg font-semibold text-left px-6 hover:no-underline">{faq.question}</AccordionTrigger>
+                  <AccordionContent className="text-base text-muted-foreground px-6">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
@@ -316,31 +321,33 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-16 md:py-24 text-center">
-            <div className="container mx-auto max-w-4xl px-4">
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">Não Perca Mais Tempo e Dinheiro!</h2>
-                <div className="flex justify-center items-center gap-4 mt-4 text-muted-foreground">
-                    <span className="flex items-center gap-1"><Lock className="h-5 w-5 text-primary"/> Compra 100% Segura</span>
-                    •
-                    <span className="flex items-center gap-1"><Zap className="h-5 w-5 text-primary"/> Acesso imediato</span>
-                    •
-                    <span className="flex items-center gap-1"><ShieldCheck className="h-5 w-5 text-primary"/> Garantia total</span>
+        <section className="bg-gray-800 text-white py-16">
+            <div className="container mx-auto max-w-4xl px-4 text-center">
+                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-primary">Não Perca Mais Tempo e Dinheiro!</h2>
+                <div className="flex justify-center items-center gap-4 mt-4 text-gray-300 flex-wrap">
+                    <span className="flex items-center gap-2"><Shield className="h-5 w-5 text-primary"/> Compra 100% Segura</span>
+                    <span className="hidden md:inline">•</span>
+                    <span className="flex items-center gap-2"><Zap className="h-5 w-5 text-primary"/> Acesso imediato</span>
+                    <span className="hidden md:inline">•</span>
+                    <span className="flex items-center gap-2"><CheckCircle2 className="h-5 w-5 text-primary"/> Garantia total</span>
                 </div>
-                <Button size="lg" className="text-xl mt-8 animate-pulse">
-                    QUERO GARANTIR MEU COMBO
+                <Button size="lg" className="text-xl mt-8 font-bold rounded-full py-6 px-10 bg-primary hover:bg-primary/90 text-primary-foreground">
+                   QUERO GARANTIR MEU COMBO
                 </Button>
             </div>
         </section>
 
       </main>
 
-      <footer className="border-t bg-gray-900 text-gray-400">
-        <div className="container mx-auto flex max-w-7xl flex-col items-center justify-center gap-2 p-4 text-center text-sm">
-          <p>Rei Dos Apps - Rodrigo Digital - © 2024. Todos os direitos reservados.</p>
+      <footer className="bg-gray-900 text-gray-400">
+        <div className="container mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 p-4 text-center text-sm sm:flex-row">
+            <p>Rodrigo Digital - © 2024. Todos os direitos reservados.</p>
+            <div className="flex items-center gap-4">
+                <AppleIcon className="h-6 w-6" />
+                <GooglePlayIcon className="h-5 w-5" />
+            </div>
         </div>
       </footer>
     </div>
   );
 }
-
-    
