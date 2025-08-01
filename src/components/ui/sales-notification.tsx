@@ -36,17 +36,20 @@ const SalesNotification = () => {
 
       setTimeout(() => {
         setVisible(false);
-      }, 5000); // Fica visível por 5 segundos
+      }, 3000); // Fica visível por 3 segundos
     };
 
-    const interval = setInterval(() => {
-      generateNotification();
-    }, 8000); // Gera uma nova notificação a cada 8 segundos
+    const initialTimeout = setTimeout(() => {
+        generateNotification();
+        const interval = setInterval(() => {
+            generateNotification();
+        }, 8000); // Gera uma nova notificação a cada 8 segundos
 
-    // Gera a primeira notificação
-    generateNotification();
+        return () => clearInterval(interval);
+    }, 5000)
 
-    return () => clearInterval(interval);
+
+    return () => clearTimeout(initialTimeout);
   }, [usedNames]);
 
   if (!visible) {
