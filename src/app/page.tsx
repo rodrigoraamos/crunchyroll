@@ -90,7 +90,7 @@ export default function Home() {
 
   return (
     <div className="flex min-h-dvh flex-col bg-background text-foreground font-sans">
-      <div className="bg-primary text-primary-foreground text-center py-2 text-sm font-bold">
+      <div className="bg-primary text-primary-foreground text-center py-2 text-sm font-black">
         Desconto apenas HOJE nesta página: 01/08/2025
       </div>
       
@@ -100,7 +100,7 @@ export default function Home() {
             <div className="inline-flex items-center bg-primary-foreground border border-primary/20 rounded-full px-4 py-1 text-sm font-semibold text-primary mb-4">
               <Sparkles className="h-4 w-4 mr-2 text-primary" /> OFERTA LIMITADA
             </div>
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-gray-800">
+            <h1 className="text-4xl font-black tracking-tight sm:text-5xl md:text-6xl text-gray-800">
               1 Ano de Crunchyroll Premium MEGA FAN Por Apenas <span className="text-primary">R$10.00</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
@@ -118,7 +118,7 @@ export default function Home() {
                       />
                   </div>
               </Card>
-              <Button size="lg" className="text-lg font-bold rounded-full px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
+              <Button size="lg" className="text-lg font-black rounded-full px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
                  QUERO MEU ACESSO AGORA! <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
@@ -132,14 +132,14 @@ export default function Home() {
                 <Box className="h-4 w-4 mr-2" />
                  O Que Você Vai Receber
               </div>
-              <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground">
+              <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground font-bold">
                 Acesso completo à melhor plataforma de animes do mundo.
               </p>
             </div>
             <Card className="p-8 rounded-2xl shadow-lg">
                 <div className="grid gap-6 md:grid-cols-2 items-center">
                     <div className="space-y-4">
-                        <h3 className="text-xl font-bold">🟧 Com o plano Crunchyroll Premium você terá:</h3>
+                        <h3 className="text-xl font-black">🟧 Com o plano Crunchyroll Premium você terá:</h3>
                          <ul className="space-y-3">
                             {features.map((feature, index) => (
                                 <li key={index} className="flex items-center gap-3">
@@ -196,8 +196,8 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
                 <Card className="flex flex-col p-6 rounded-2xl border-2">
                     <CardHeader className="text-center p-2">
-                        <CardTitle className="text-xl font-bold text-gray-700">PLANO BÁSICO</CardTitle>
-                        <CardDescription className="text-4xl font-bold text-primary pt-2">R$10,00</CardDescription>
+                        <CardTitle className="text-xl font-black text-gray-700">PLANO BÁSICO</CardTitle>
+                        <CardDescription className="text-4xl font-black text-primary pt-2">R$10,00</CardDescription>
                          <p className="text-muted-foreground text-sm">1 Ano Sem Preocupações</p>
                     </CardHeader>
                     <CardContent className="flex-grow pt-6">
@@ -211,23 +211,23 @@ export default function Home() {
                         </ul>
                     </CardContent>
                     <div className="p-6 pt-0">
-                        <Button className="w-full text-lg font-bold rounded-full py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
+                        <Button className="w-full text-lg font-black rounded-full py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
                             QUERO ESSA OPÇÃO
                         </Button>
                     </div>
                 </Card>
                 <div className="dark">
                     <Card className="flex flex-col p-6 rounded-2xl border-2 border-primary relative overflow-visible">
-                         <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary px-4 py-1 rounded-full text-sm font-bold text-primary-foreground flex items-center gap-2">
+                         <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary px-4 py-1 rounded-full text-sm font-black text-primary-foreground flex items-center gap-2">
                              <Star className="w-4 h-4" /> RECOMENDADO
                         </div>
                         <CardHeader className="text-center p-2">
                             <div className="flex justify-center my-2">
                                 {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />)}
                             </div>
-                            <CardTitle className="text-xl font-bold">PLANO COMPLETO</CardTitle>
-                            <CardDescription className="text-4xl font-bold text-white pt-2">R$27,00</CardDescription>
-                            <p className="text-muted-foreground text-sm font-bold">🎁 BÔNUS EXCLUSIVOS</p>
+                            <CardTitle className="text-xl font-black">PLANO COMPLETO</CardTitle>
+                            <CardDescription className="text-4xl font-black text-white pt-2">R$27,00</CardDescription>
+                            <p className="text-muted-foreground text-sm font-black">🎁 BÔNUS EXCLUSIVOS</p>
                         </CardHeader>
                         <CardContent className="flex-grow pt-6">
                              <ul className="space-y-3 mb-4">
@@ -253,7 +253,7 @@ export default function Home() {
                             </div>
                         </CardContent>
                         <div className="p-6 pt-0">
-                             <Button className="w-full text-lg font-bold rounded-full py-6 bg-green-500 hover:bg-green-600 text-white">
+                             <Button className="w-full text-lg font-black rounded-full py-6 bg-green-500 hover:bg-green-600 text-white">
                                 SIM, QUERO O COMBO COMPLETO
                             </Button>
                         </div>
@@ -288,9 +288,9 @@ export default function Home() {
              <div className="inline-flex items-center bg-primary/10 rounded-full p-3 text-primary mb-4">
                 <WhatsAppIcon className="h-8 w-8" />
               </div>
-              <h2 className="text-3xl font-bold">Ainda tem dúvidas?</h2>
+              <h2 className="text-3xl font-black">Ainda tem dúvidas?</h2>
               <p className="mt-2 text-lg text-muted-foreground">Fale conosco diretamente pelo WhatsApp. Estamos aqui para ajudar!</p>
-              <Button size="lg" className="text-lg mt-6 bg-green-500 hover:bg-green-600 text-white rounded-full font-bold px-8 py-6">
+              <Button size="lg" className="text-lg mt-6 bg-green-500 hover:bg-green-600 text-white rounded-full font-black px-8 py-6">
                 <WhatsAppIcon className="mr-2 h-5 w-5" />
                 Dúvidas e Suporte via WhatsApp
               </Button>
@@ -323,7 +323,7 @@ export default function Home() {
 
         <section className="bg-gray-800 text-white py-16">
             <div className="container mx-auto max-w-4xl px-4 text-center">
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-primary">Não Perca Mais Tempo e Dinheiro!</h2>
+                <h2 className="text-3xl font-black tracking-tight sm:text-4xl text-primary">Não Perca Mais Tempo e Dinheiro!</h2>
                 <div className="flex justify-center items-center gap-4 mt-4 text-gray-300 flex-wrap">
                     <span className="flex items-center gap-2"><Shield className="h-5 w-5 text-primary"/> Compra 100% Segura</span>
                     <span className="hidden md:inline">•</span>
@@ -331,7 +331,7 @@ export default function Home() {
                     <span className="hidden md:inline">•</span>
                     <span className="flex items-center gap-2"><CheckCircle2 className="h-5 w-5 text-primary"/> Garantia total</span>
                 </div>
-                <Button size="lg" className="text-xl mt-8 font-bold rounded-full py-6 px-10 bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Button size="lg" className="text-xl mt-8 font-black rounded-full py-6 px-10 bg-primary hover:bg-primary/90 text-primary-foreground">
                    QUERO GARANTIR MEU COMBO
                 </Button>
             </div>
