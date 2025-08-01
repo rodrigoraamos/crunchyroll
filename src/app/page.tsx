@@ -263,7 +263,7 @@ export default function Home() {
               </div>
               <h2 className="text-3xl font-black">Ainda tem dúvidas?</h2>
               <p className="mt-2 text-lg text-muted-foreground">Fale conosco diretamente pelo WhatsApp. Estamos aqui para ajudar!</p>
-              <Button size="lg" className="text-lg mt-6 bg-green-500 hover:bg-green-600 text-white rounded-xl font-black px-6 md:px-8 py-6">
+              <Button size="lg" className="text-lg mt-6 bg-green-500 hover:bg-green-600 text-white rounded-xl font-black px-4 md:px-6 py-6">
                 <WhatsAppIcon className="mr-2 h-5 w-5" />
                 Dúvidas e Suporte via WhatsApp
               </Button>
