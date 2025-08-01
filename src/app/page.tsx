@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Check, ArrowRight, Star, GitMerge, MessageSquare, Box, Wand2, Tv, Shield, Zap, CircleHelp, HandCoins, Clock, CheckCircle2, Flame } from "lucide-react";
+import { Check, ArrowRight, Star, GitMerge, MessageSquare, Box, Wand2, Tv, Shield, Zap, CircleHelp, HandCoins, Clock, CheckCircle2 } from "lucide-react";
 
 
 const IconCard = ({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) => (
@@ -98,7 +98,7 @@ export default function Home() {
         <section className="py-12 md:py-20 lg:py-24">
           <div className="container mx-auto max-w-4xl px-4 text-center">
             <div className="inline-flex items-center justify-center mb-4">
-              <Flame className="h-8 w-8 mr-2 text-primary" />
+              <span className="text-2xl mr-2">🔥</span>
               <span className="text-2xl font-black text-primary">OFERTA LIMITADA</span>
             </div>
             <h1 className="text-4xl font-black tracking-tight sm:text-5xl md:text-6xl text-gray-800">
