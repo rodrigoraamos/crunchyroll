@@ -141,7 +141,7 @@ export default function Home() {
               </p>
             </div>
             <Card className="p-8 rounded-2xl shadow-lg">
-                <div className="grid gap-6 md:grid-cols-2 items-center">
+                <div className="grid gap-6 items-center">
                     <div className="space-y-4">
                         <h3 className="text-2xl font-black">🟧 Com o plano Crunchyroll Premium você terá:</h3>
                          <ul className="space-y-3">
@@ -152,9 +152,6 @@ export default function Home() {
                                 </li>
                             ))}
                         </ul>
-                    </div>
-                     <div className="flex justify-center items-center">
-                        <Image src="https://i.imgur.com/eSeozeF.png" alt="Anime characters collage" width={500} height={350} className="rounded-lg shadow-md" data-ai-hint="video player" />
                     </div>
                 </div>
             </Card>
