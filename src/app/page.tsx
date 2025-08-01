@@ -123,7 +123,7 @@ export default function Home() {
                 />
               </div>
               <a href="#planos">
-                <Button size="lg" className="text-lg font-black rounded-xl px-6 md:px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Button size="lg" className="text-lg font-black rounded-xl px-4 md:px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
                    🚀 QUERO MEU ACESSO AGORA! <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
@@ -192,7 +192,7 @@ export default function Home() {
                     </CardContent>
                     <div className="p-6 pt-0">
                         <a href="https://checkoutdigital.shop/checkout-white-6831/?add-to-cart=6831" className="w-full block">
-                            <Button className="w-full text-lg font-black rounded-xl px-4 py-6 text-primary-foreground" style={{ backgroundColor: '#FF6A00' }}>
+                            <Button className="w-full text-lg font-black rounded-xl px-4 md:px-8 py-6 text-primary-foreground" style={{ backgroundColor: '#FF6A00' }}>
                                 👉 QUERO ESSA OPÇÃO
                             </Button>
                         </a>
@@ -226,7 +226,7 @@ export default function Home() {
                         </CardContent>
                         <div className="p-6 pt-0">
                              <a href="https://checkoutdigital.shop/checkout-white-6837/?add-to-cart=6837" className="w-full block">
-                                <Button className="w-full text-lg font-black rounded-xl px-6 py-6 bg-green-500 hover:bg-green-600 text-white">
+                                <Button className="w-full text-lg font-black rounded-xl px-4 py-6 bg-green-500 hover:bg-green-600 text-white">
                                     🚀 SIM, QUERO O COMBO COMPLETO
                                 </Button>
                             </a>
@@ -264,10 +264,12 @@ export default function Home() {
               </div>
               <h2 className="text-3xl font-black">Ainda tem dúvidas?</h2>
               <p className="mt-2 text-lg text-muted-foreground">Fale conosco diretamente pelo WhatsApp. Estamos aqui para ajudar!</p>
-              <Button size="lg" className="text-lg mt-6 bg-green-500 hover:bg-green-600 text-white rounded-xl font-black px-4 py-6">
-                <WhatsAppIcon className="mr-2 h-5 w-5" />
-                Dúvidas e Suporte via WhatsApp
-              </Button>
+              <a href="https://wa.me/5511953312416" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="text-lg mt-6 bg-green-500 hover:bg-green-600 text-white rounded-xl font-black px-4 py-6">
+                    <WhatsAppIcon className="mr-2 h-5 w-5" />
+                    Dúvidas e Suporte via WhatsApp
+                </Button>
+              </a>
           </div>
         </section>
         
@@ -306,7 +308,7 @@ export default function Home() {
                     <span className="flex items-center gap-2"><CheckCircle2 className="h-5 w-5 text-primary"/> Garantia total</span>
                 </div>
                 <a href="#planos">
-                  <Button size="lg" className="text-xl mt-8 font-black rounded-xl py-6 px-6 md:px-10 bg-primary hover:bg-primary/90 text-primary-foreground">
+                  <Button size="lg" className="text-xl mt-8 font-black rounded-xl py-6 px-4 md:px-10 bg-primary hover:bg-primary/90 text-primary-foreground">
                     QUERO GARANTIR MEU COMBO
                   </Button>
                 </a>
