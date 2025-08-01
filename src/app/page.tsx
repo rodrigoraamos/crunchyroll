@@ -109,7 +109,7 @@ export default function Home() {
               Assista TODOS os seus animes favoritos sem anúncios, em HD, offline e com lançamentos no mesmo dia do Japão
             </p>
             <div className="mt-8 flex flex-col items-center gap-6">
-              <Button size="lg" className="text-lg font-black rounded-full px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
+              <Button size="lg" className="text-lg font-black rounded-xl px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
                  🚀 QUERO MEU ACESSO AGORA! <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
@@ -176,14 +176,14 @@ export default function Home() {
                         </ul>
                     </CardContent>
                     <div className="p-6 pt-0">
-                        <Button className="w-full text-lg font-black rounded-full py-6 text-primary-foreground" style={{ backgroundColor: '#FF6A00' }}>
+                        <Button className="w-full text-lg font-black rounded-xl py-6 text-primary-foreground" style={{ backgroundColor: '#FF6A00' }}>
                             👉 QUERO ESSA OPÇÃO
                         </Button>
                     </div>
                 </Card>
                 <div className="dark">
                     <Card className="flex flex-col p-6 rounded-2xl border-2 border-primary relative overflow-visible bg-[#111827]">
-                         <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary px-4 py-1 rounded-full text-sm font-black text-primary-foreground flex items-center gap-2">
+                         <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary px-4 py-1 rounded-xl text-sm font-black text-primary-foreground flex items-center gap-2">
                              <Star className="w-4 h-4" /> RECOMENDADO
                         </div>
                         <CardHeader className="text-center p-2">
@@ -208,7 +208,7 @@ export default function Home() {
                             </div>
                         </CardContent>
                         <div className="p-6 pt-0">
-                             <Button className="w-full text-lg font-black rounded-full py-6 bg-green-500 hover:bg-green-600 text-white">
+                             <Button className="w-full text-lg font-black rounded-xl py-6 bg-green-500 hover:bg-green-600 text-white">
                                 🚀 SIM, QUERO O COMBO COMPLETO
                             </Button>
                         </div>
@@ -245,7 +245,7 @@ export default function Home() {
               </div>
               <h2 className="text-3xl font-black">Ainda tem dúvidas?</h2>
               <p className="mt-2 text-lg text-muted-foreground">Fale conosco diretamente pelo WhatsApp. Estamos aqui para ajudar!</p>
-              <Button size="lg" className="text-lg mt-6 bg-green-500 hover:bg-green-600 text-white rounded-full font-black px-8 py-6">
+              <Button size="lg" className="text-lg mt-6 bg-green-500 hover:bg-green-600 text-white rounded-xl font-black px-8 py-6">
                 <WhatsAppIcon className="mr-2 h-5 w-5" />
                 Dúvidas e Suporte via WhatsApp
               </Button>
@@ -286,7 +286,7 @@ export default function Home() {
                     <span className="hidden md:inline">•</span>
                     <span className="flex items-center gap-2"><CheckCircle2 className="h-5 w-5 text-primary"/> Garantia total</span>
                 </div>
-                <Button size="lg" className="text-xl mt-8 font-black rounded-full py-6 px-10 bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Button size="lg" className="text-xl mt-8 font-black rounded-xl py-6 px-10 bg-primary hover:bg-primary/90 text-primary-foreground">
                    QUERO GARANTIR MEU COMBO
                 </Button>
             </div>
