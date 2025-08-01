@@ -122,10 +122,11 @@ export default function Home() {
                     strategy="afterInteractive" 
                 />
               </div>
-
-              <Button size="lg" className="text-lg font-black rounded-xl px-6 md:px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
-                 🚀 QUERO MEU ACESSO AGORA! <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <a href="#planos">
+                <Button size="lg" className="text-lg font-black rounded-xl px-6 md:px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
+                   🚀 QUERO MEU ACESSO AGORA! <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
             </div>
           </div>
         </section>
@@ -225,7 +226,7 @@ export default function Home() {
                         </CardContent>
                         <div className="p-6 pt-0">
                              <a href="https://checkoutdigital.shop/checkout-white-6837/?add-to-cart=6837" className="w-full block">
-                                <Button className="w-full text-lg font-black rounded-xl px-4 md:px-6 py-6 bg-green-500 hover:bg-green-600 text-white">
+                                <Button className="w-full text-lg font-black rounded-xl px-6 md:px-8 py-6 bg-green-500 hover:bg-green-600 text-white">
                                     🚀 SIM, QUERO O COMBO COMPLETO
                                 </Button>
                             </a>
