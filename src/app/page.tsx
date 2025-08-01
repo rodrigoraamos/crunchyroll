@@ -176,7 +176,7 @@ export default function Home() {
                     <CardHeader className="text-center p-2">
                         <CardTitle className="text-2xl font-black text-gray-700">PLANO BÁSICO</CardTitle>
                         <CardDescription className="text-4xl font-black text-primary pt-2">R$10,00</CardDescription>
-                         <p className="text-base text-muted-foreground">1 Ano Sem Preocupações</p>
+                         <p className="text-base text-green-500">1 Ano Sem Preocupações</p>
                     </CardHeader>
                     <CardContent className="flex-grow pt-6">
                         <ul className="space-y-3">
@@ -319,5 +319,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
