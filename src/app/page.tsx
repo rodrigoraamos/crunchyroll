@@ -7,6 +7,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { CheckCircle2, ArrowRight, Star, HandCoins, Clock, CircleHelp, Shield, Tv, Zap } from "lucide-react";
+import SalesNotification from "@/components/SalesNotification";
 
 
 const IconCard = ({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) => (
@@ -316,6 +317,7 @@ export default function Home() {
             </div>
         </div>
       </footer>
+      <SalesNotification />
     </div>
   );
 }
