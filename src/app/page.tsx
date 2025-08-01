@@ -209,7 +209,7 @@ export default function Home() {
                         </CardContent>
                         <div className="p-6 pt-0">
                              <Button className="w-full text-lg font-black rounded-full py-6 bg-green-500 hover:bg-green-600 text-white">
-                                SIM, QUERO O COMBO COMPLETO
+                                🚀 SIM, QUERO O COMBO COMPLETO
                             </Button>
                         </div>
                     </Card>
