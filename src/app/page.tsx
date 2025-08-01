@@ -81,11 +81,12 @@ export default function Home() {
   ];
 
   const planCompleteFeatures = [
-      { icon: <GitMerge className="h-5 w-5 text-primary"/>, text: 'Acesso vitalício' },
-      { icon: <MessageSquare className="h-5 w-5 text-primary"/>, text: 'Suporte VIP 24/7' },
-      { icon: <Box className="h-5 w-5 text-primary"/>, text: 'Atualizações de lançamentos' },
-      { icon: <Wand2 className="h-5 w-5 text-primary"/>, text: 'Novas plataformas futuras' },
-      { icon: <CheckCircle2 className="h-5 w-5 text-green-500"/>, text: 'Tudo do plano básico' },
+      { icon: '🔁', text: 'Acesso vitalício' },
+      { icon: '💬', text: 'Suporte VIP 24/7' },
+      { icon: '📦', text: 'Atualizações de lançamentos' },
+      { icon: '✨', text: 'Novas plataformas futuras' },
+      { icon: '✅', text: 'Tudo do plano básico' },
+      { icon: '🎬', text: 'Combo Streaming:' },
   ];
 
   return (
@@ -198,14 +199,11 @@ export default function Home() {
                              <ul className="space-y-3 mb-4">
                                {planCompleteFeatures.map((feat, index) => (
                                     <li key={index} className="flex items-center gap-3">
-                                    {feat.icon}
+                                    <span className="text-xl">{feat.icon}</span>
                                     <span className="text-sm">{feat.text}</span>
                                     </li>
                                ))}
                             </ul>
-                            <div className="text-left font-semibold my-4 flex items-center gap-2 text-base">
-                                <CheckCircle2 className="h-5 w-5 text-green-500"/> Combo Streaming:
-                            </div>
                              <div className="grid grid-cols-4 gap-4 justify-items-center">
                                  <Image src="https://placehold.co/100x100.png" alt="HBO" width={50} height={50} className="grayscale" data-ai-hint="hbo logo" />
                                  <Image src="https://placehold.co/100x100.png" alt="Prime Video" width={50} height={50} className="grayscale" data-ai-hint="prime video logo" />
