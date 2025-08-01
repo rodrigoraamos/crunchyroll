@@ -204,7 +204,7 @@ export default function Home() {
                                ))}
                             </ul>
                             <div className="flex justify-center mt-4">
-                                <Image src="https://i.imgur.com/W82YUws.png" alt="Plataformas de streaming" width={300} height={50} />
+                                <Image src="https://i.imgur.com/W82YUws.png" alt="Plataformas de streaming" width={350} height={58} />
                             </div>
                         </CardContent>
                         <div className="p-6 pt-0">
