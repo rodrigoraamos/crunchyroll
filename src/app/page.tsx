@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Check, ArrowRight, Star, GitMerge, MessageSquare, Box, Wand2, Tv, Shield, Zap, CircleHelp, HandCoins, Clock, CheckCircle2 } from "lucide-react";
+import { CheckCircle2, ArrowRight, Star, GitMerge, MessageSquare, Box, Wand2, Tv, Shield, Zap, CircleHelp, HandCoins, Clock } from "lucide-react";
 
 
 const IconCard = ({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) => (
@@ -89,7 +89,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex min-h-dvh flex-col bg-background text-foreground font-sans">
+    <div className="flex min-h-dvh flex-col bg-background text-foreground">
       <div className="bg-primary text-primary-foreground text-center py-2 text-sm font-black">
         Desconto apenas HOJE nesta página: 01/08/2025
       </div>
@@ -101,24 +101,13 @@ export default function Home() {
               <span className="text-2xl mr-2">🔥</span>
               <span className="text-2xl font-black text-primary">OFERTA LIMITADA</span>
             </div>
-            <h1 className="text-4xl font-black tracking-tight sm:text-5xl md:text-6xl text-gray-800">
+            <h1 className="text-4xl font-black tracking-tight sm:text-5xl text-gray-800">
               1 Ano de Crunchyroll Premium MEGA FAN Por Apenas <span className="text-primary">R$10.00</span>
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
+            <p className="mx-auto mt-6 max-w-2xl text-xl text-muted-foreground">
               Assista TODOS os seus animes favoritos sem anúncios, em HD, offline e com lançamentos no mesmo dia do Japão
             </p>
             <div className="mt-8 flex flex-col items-center gap-6">
-              <Card className="overflow-hidden shadow-lg w-full max-w-sm mx-auto border-gray-200 border-4 rounded-3xl">
-                  <div className="relative aspect-[9/19] cursor-pointer group">
-                      <Image
-                          src="https://placehold.co/400x800.png"
-                          alt="App Screenshot"
-                          fill
-                          className="object-cover"
-                          data-ai-hint="app screenshot mobile"
-                      />
-                  </div>
-              </Card>
               <Button size="lg" className="text-lg font-black rounded-full px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
                  🚀 QUERO MEU ACESSO AGORA! <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -140,12 +129,12 @@ export default function Home() {
             <Card className="p-8 rounded-2xl shadow-lg">
                 <div className="grid gap-6 md:grid-cols-2 items-center">
                     <div className="space-y-4">
-                        <h3 className="text-xl font-black">🟧 Com o plano Crunchyroll Premium você terá:</h3>
+                        <h3 className="text-2xl font-black">🟧 Com o plano Crunchyroll Premium você terá:</h3>
                          <ul className="space-y-3">
                             {features.map((feature, index) => (
                                 <li key={index} className="flex items-center gap-3">
                                 <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0" />
-                                <span className="text-muted-foreground">{feature}</span>
+                                <span className="text-base text-muted-foreground">{feature}</span>
                                 </li>
                             ))}
                         </ul>
@@ -165,23 +154,23 @@ export default function Home() {
                 <HandCoins className="h-4 w-4 mr-2" />
                  Escolha o Plano Perfeito Para Você
               </div>
-              <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground">
+              <p className="mx-auto mt-2 text-lg text-muted-foreground">
                 Oferta por tempo limitado. Aproveite agora!
               </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
                 <Card className="flex flex-col p-6 rounded-2xl border-2">
                     <CardHeader className="text-center p-2">
-                        <CardTitle className="text-xl font-black text-gray-700">PLANO BÁSICO</CardTitle>
+                        <CardTitle className="text-2xl font-black text-gray-700">PLANO BÁSICO</CardTitle>
                         <CardDescription className="text-4xl font-black text-primary pt-2">R$10,00</CardDescription>
-                         <p className="text-muted-foreground text-sm">1 Ano Sem Preocupações</p>
+                         <p className="text-base text-muted-foreground">1 Ano Sem Preocupações</p>
                     </CardHeader>
                     <CardContent className="flex-grow pt-6">
                         <ul className="space-y-3">
                            {planBasicFeatures.map((feature, index) => (
                                 <li key={index} className="flex items-center gap-3">
                                 <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0" />
-                                <span className="text-muted-foreground text-sm">{feature}</span>
+                                <span className="text-sm text-muted-foreground">{feature}</span>
                                 </li>
                            ))}
                         </ul>
@@ -201,9 +190,9 @@ export default function Home() {
                             <div className="flex justify-center my-2">
                                 {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />)}
                             </div>
-                            <CardTitle className="text-xl font-black">PLANO COMPLETO</CardTitle>
+                            <CardTitle className="text-2xl font-black">PLANO COMPLETO</CardTitle>
                             <CardDescription className="text-4xl font-black text-white pt-2">R$27,00</CardDescription>
-                            <p className="text-muted-foreground text-sm font-black">🎁 BÔNUS EXCLUSIVOS</p>
+                            <p className="text-base font-black text-muted-foreground">🎁 BÔNUS EXCLUSIVOS</p>
                         </CardHeader>
                         <CardContent className="flex-grow pt-6">
                              <ul className="space-y-3 mb-4">
@@ -214,7 +203,7 @@ export default function Home() {
                                     </li>
                                ))}
                             </ul>
-                            <div className="text-left font-semibold my-4 flex items-center gap-2">
+                            <div className="text-left font-semibold my-4 flex items-center gap-2 text-base">
                                 <CheckCircle2 className="h-5 w-5 text-green-500"/> Combo Streaming:
                             </div>
                              <div className="grid grid-cols-4 gap-4 justify-items-center">
@@ -280,7 +269,7 @@ export default function Home() {
                 <CircleHelp className="h-4 w-4 mr-2" />
                  Perguntas Frequentes
               </div>
-              <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground">
+              <p className="mx-auto mt-2 text-lg text-muted-foreground">
                 Tiramos todas as suas dúvidas para você comprar com tranquilidade.
               </p>
             </div>
@@ -300,7 +289,7 @@ export default function Home() {
         <section className="bg-gray-800 text-white py-16">
             <div className="container mx-auto max-w-4xl px-4 text-center">
                 <h2 className="text-3xl font-black tracking-tight sm:text-4xl text-primary">Não Perca Mais Tempo e Dinheiro!</h2>
-                <div className="flex justify-center items-center gap-4 mt-4 text-gray-300 flex-wrap">
+                <div className="flex justify-center items-center gap-4 mt-4 text-gray-300 flex-wrap text-base">
                     <span className="flex items-center gap-2"><Shield className="h-5 w-5 text-primary"/> Compra 100% Segura</span>
                     <span className="hidden md:inline">•</span>
                     <span className="flex items-center gap-2"><Zap className="h-5 w-5 text-primary"/> Acesso imediato</span>
