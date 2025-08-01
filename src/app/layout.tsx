@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Crunchyroll Mega Fan Annual',
-  description: 'Sales page for Crunchyroll Mega Fan Annual subscription.',
+  title: 'Crunchyroll Premium - Oferta Limitada',
+  description: '1 Ano de Crunchyroll Premium MEGA FAN Por Apenas R$10.00',
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="pt-BR" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
