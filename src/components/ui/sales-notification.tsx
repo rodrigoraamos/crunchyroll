@@ -43,10 +43,10 @@ const SalesNotification = () => {
         generateNotification();
         const interval = setInterval(() => {
             generateNotification();
-        }, 8000); // Gera uma nova notificação a cada 8 segundos
+        }, 12000); // Gera uma nova notificação a cada 12 segundos
 
         return () => clearInterval(interval);
-    }, 5000)
+    }, 7000)
 
 
     return () => clearTimeout(initialTimeout);
