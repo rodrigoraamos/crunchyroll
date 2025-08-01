@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { CheckCircle2, ArrowRight, Star, GitMerge, MessageSquare, Box, Wand2, Tv, Shield, Zap, CircleHelp, HandCoins, Clock } from "lucide-react";
+import { CheckCircle2, ArrowRight, Star, HandCoins, Clock, CircleHelp, Shield, Tv, Zap } from "lucide-react";
 
 
 const IconCard = ({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) => (
@@ -120,8 +120,7 @@ export default function Home() {
           <div className="container mx-auto max-w-5xl px-4">
             <div className="text-center mb-12">
                <div className="inline-flex items-center bg-primary/10 rounded-full px-4 py-1 text-sm font-semibold text-primary mb-4">
-                <Box className="h-4 w-4 mr-2" />
-                 O Que Você Vai Receber
+                 🎁 O Que Você Vai Receber
               </div>
               <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground font-bold">
                 Acesso completo à melhor plataforma de animes do mundo.
@@ -200,7 +199,7 @@ export default function Home() {
                                {planCompleteFeatures.map((feat, index) => (
                                     <li key={index} className="flex items-center gap-3">
                                     <span className="text-xl">{feat.icon}</span>
-                                    <span className="text-sm">{feat.text}</span>
+                                    <span className="text-sm font-bold">{feat.text}</span>
                                     </li>
                                ))}
                             </ul>
@@ -314,3 +313,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
