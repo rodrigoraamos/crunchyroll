@@ -120,7 +120,7 @@ export default function Home() {
                   </div>
               </Card>
               <Button size="lg" className="text-lg font-black rounded-full px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
-                 QUERO MEU ACESSO AGORA! <ArrowRight className="ml-2 h-5 w-5" />
+                 🚀 QUERO MEU ACESSO AGORA! <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
           </div>
@@ -352,5 +352,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
