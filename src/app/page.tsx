@@ -182,7 +182,7 @@ export default function Home() {
                     </div>
                 </Card>
                 <div className="dark">
-                    <Card className="flex flex-col p-6 rounded-2xl border-2 border-primary relative overflow-visible">
+                    <Card className="flex flex-col p-6 rounded-2xl border-2 border-primary relative overflow-visible bg-[#111827]">
                          <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary px-4 py-1 rounded-full text-sm font-black text-primary-foreground flex items-center gap-2">
                              <Star className="w-4 h-4" /> RECOMENDADO
                         </div>
@@ -313,5 +313,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
