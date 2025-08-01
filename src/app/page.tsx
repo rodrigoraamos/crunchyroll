@@ -7,7 +7,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { CheckCircle2, ArrowRight, Star, HandCoins, Clock, CircleHelp, Shield, Tv, Zap } from "lucide-react";
-import SalesNotification from "@/components/SalesNotification";
 
 
 const IconCard = ({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) => (
@@ -226,7 +225,7 @@ export default function Home() {
                         </CardContent>
                         <div className="p-6 pt-0">
                              <a href="https://checkoutdigital.shop/checkout-white-6837/?add-to-cart=6837" className="w-full block">
-                                <Button className="w-full text-lg font-black rounded-xl px-4 py-6 bg-green-500 hover:bg-green-600 text-white">
+                                <Button className="w-full text-lg font-black rounded-xl px-6 py-6 bg-green-500 hover:bg-green-600 text-white">
                                     🚀 SIM, QUERO O COMBO COMPLETO
                                 </Button>
                             </a>
@@ -326,7 +325,8 @@ export default function Home() {
             </div>
         </div>
       </footer>
-      <SalesNotification />
     </div>
   );
 }
+
+    
