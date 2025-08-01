@@ -191,7 +191,7 @@ export default function Home() {
                     </CardContent>
                     <div className="p-6 pt-0">
                         <a href="https://checkoutdigital.shop/checkout-white-6831/?add-to-cart=6831" className="w-full block">
-                            <Button className="w-full text-lg font-black rounded-xl px-6 md:px-8 py-6 text-primary-foreground" style={{ backgroundColor: '#FF6A00' }}>
+                            <Button className="w-full text-lg font-black rounded-xl px-4 md:px-6 py-6 text-primary-foreground" style={{ backgroundColor: '#FF6A00' }}>
                                 👉 QUERO ESSA OPÇÃO
                             </Button>
                         </a>
@@ -224,9 +224,11 @@ export default function Home() {
                             </div>
                         </CardContent>
                         <div className="p-6 pt-0">
-                             <Button className="w-full text-lg font-black rounded-xl px-6 md:px-8 py-6 bg-green-500 hover:bg-green-600 text-white">
-                                🚀 SIM, QUERO O COMBO COMPLETO
-                            </Button>
+                             <a href="https://checkoutdigital.shop/checkout-white-6837/?add-to-cart=6837" className="w-full block">
+                                <Button className="w-full text-lg font-black rounded-xl px-4 md:px-6 py-6 bg-green-500 hover:bg-green-600 text-white">
+                                    🚀 SIM, QUERO O COMBO COMPLETO
+                                </Button>
+                            </a>
                         </div>
                     </Card>
                 </div>
