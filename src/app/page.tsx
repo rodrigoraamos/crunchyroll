@@ -122,6 +122,9 @@ export default function Home() {
               Assista TODOS os seus animes favoritos sem anúncios, em HD, offline e com lançamentos no mesmo dia do Japão
             </p>
             <div className="mt-8 flex flex-col items-center gap-6">
+               <p className="font-bold text-lg mb-2 text-gray-700 animate-pulse">
+                👇 Assista ao vídeo abaixo para entender como funciona 👇
+               </p>
                <div className="w-full max-w-2xl mx-auto">
                 <div id="vid_688cc51742446e639fafab62" style={{position: 'relative', width: '100%', padding: '176.66666666666666% 0 0'}}>
                     <img id="thumb_688cc51742446e639fafab62" src="https://images.converteai.net/d5647b15-021e-4678-89a8-e5966099f778/players/688cc51742446e639fafab62/thumbnail.jpg" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block'}} alt="thumbnail" />
