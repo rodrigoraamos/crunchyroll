@@ -1,6 +1,7 @@
 
 'use client';
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Script from "next/script";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -39,6 +40,17 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 
 export default function Home() {
+  const [currentDate, setCurrentDate] = useState('');
+
+  useEffect(() => {
+    const date = new Date();
+    const formattedDate = date.toLocaleDateString('pt-BR', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+    });
+    setCurrentDate(formattedDate);
+  }, []);
 
   const features = [
     'Acesso ilimitado a todos os animes da plataforma',
@@ -93,7 +105,7 @@ export default function Home() {
   return (
     <div className="flex min-h-dvh flex-col bg-background text-foreground">
       <div className="bg-primary text-primary-foreground text-center py-2 text-sm font-black">
-        Desconto apenas HOJE nesta página: 01/08/2025
+        Desconto apenas HOJE nesta página: {currentDate}
       </div>
       
       <main className="flex-1">
@@ -325,5 +337,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
