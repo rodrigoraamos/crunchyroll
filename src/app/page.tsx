@@ -188,7 +188,9 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
                 <Card className="flex flex-col p-6 rounded-2xl border-2">
                     <CardHeader className="text-center p-2">
-                        <CardTitle className="text-2xl font-black text-gray-700">PLANO BÁSICO</CardTitle>
+                        <CardTitle>
+                          <div className="text-2xl font-black text-gray-700">PLANO BÁSICO</div>
+                        </CardTitle>
                         <CardDescription className="text-4xl font-black text-primary pt-2">R$10,00</CardDescription>
                          <p className="text-base text-green-500 font-bold">1 Ano Sem Preocupações</p>
                     </CardHeader>
@@ -217,10 +219,12 @@ export default function Home() {
                         </div>
                         <CardHeader className="text-center p-2">
                             <CardTitle>
-                               <div className="flex justify-center my-2">
-                                    {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />)}
-                                </div>
-                                <div className="text-2xl font-black">PLANO COMPLETO</div>
+                               <div>
+                                 <div className="flex justify-center my-2">
+                                      {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />)}
+                                  </div>
+                                  <div className="text-2xl font-black">PLANO COMPLETO</div>
+                               </div>
                             </CardTitle>
                             <CardDescription className="text-4xl font-black pt-2" style={{ color: '#facc15' }}>R$27,00</CardDescription>
                             <p className="text-base font-black text-muted-foreground">🎁 BÔNUS EXCLUSIVOS</p>
@@ -342,3 +346,5 @@ export default function Home() {
       </footer>
     </div>
   );
+
+    
