@@ -202,7 +202,7 @@ export default function Home() {
                         </ul>
                     </CardContent>
                     <div className="p-6 pt-0">
-                        <a href="https://checkoutdigital.shop/checkout-white-6831/?add-to-cart=6831" className="w-full block">
+                        <a href="https://ferramentas-premium4.pay.yampi.com.br/r/KBJCK8LUV9" className="w-full block">
                             <Button className="w-full text-lg font-black rounded-xl px-4 py-6 text-primary-foreground" style={{ backgroundColor: '#FF6A00' }}>
                                 👉 QUERO ESSA OPÇÃO
                             </Button>
@@ -339,4 +339,5 @@ export default function Home() {
       </footer>
     </div>
   );
-}
+
+    
