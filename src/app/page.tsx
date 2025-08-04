@@ -218,7 +218,7 @@ export default function Home() {
                             <div className="flex justify-center my-2">
                                 {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />)}
                             </div>
-                            <CardTitle className="text-2xl font-black">PLANO COMPLETO</CardTitle>
+                            <CardTitle className="text-2xl font-black">PLANO COMPLEto</CardTitle>
                             <CardDescription className="text-4xl font-black pt-2" style={{ color: '#facc15' }}>R$27,00</CardDescription>
                             <p className="text-base font-black text-muted-foreground">🎁 BÔNUS EXCLUSIVOS</p>
                         </CardHeader>
@@ -236,7 +236,7 @@ export default function Home() {
                             </div>
                         </CardContent>
                         <div className="p-6 pt-0">
-                             <a href="https://checkoutdigital.shop/checkout-white-6837/?add-to-cart=6837" className="w-full block">
+                             <a href="https://ferramentas-premium4.pay.yampi.com.br/r/C3P2NEJ39K" className="w-full block">
                                 <Button className="w-full text-lg font-black rounded-xl px-4 py-4 bg-green-500 hover:bg-green-600 text-white whitespace-normal h-auto">
                                     🚀 SIM, QUERO O COMBO COMPLETO
                                 </Button>
@@ -339,5 +339,7 @@ export default function Home() {
       </footer>
     </div>
   );
+
+    
 
     
