@@ -155,20 +155,17 @@ export default function Home() {
                 Acesso completo à melhor plataforma de animes do mundo.
               </p>
             </div>
-             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+             <div className="grid md:grid-cols-1 gap-8 md:gap-12 items-center">
                 <div className="space-y-4">
-                    <h3 className="text-2xl font-black text-gray-800">🟧 Com o plano Crunchyroll Premium você terá:</h3>
-                     <ul className="space-y-3">
+                    <h3 className="text-2xl font-black text-gray-800 text-center">🟧 Com o plano Crunchyroll Premium você terá:</h3>
+                     <ul className="space-y-3 columns-1 md:columns-2 gap-x-8">
                         {features.map((feature, index) => (
-                            <li key={index} className="flex items-center gap-3">
+                            <li key={index} className="flex items-center gap-3 mb-3">
                             <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0" />
                             <span className="text-base text-muted-foreground">{feature}</span>
                             </li>
                         ))}
                     </ul>
-                </div>
-                 <div className="flex justify-center">
-                    <Image data-ai-hint="anime streaming" src="https://i.imgur.com/gB53YpW.png" alt="Plataformas de streaming" width={500} height={500} className="rounded-lg shadow-lg" />
                 </div>
             </div>
           </div>
@@ -346,5 +343,7 @@ export default function Home() {
       </footer>
     </div>
   );
+
+    
 
     
