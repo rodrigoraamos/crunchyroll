@@ -155,21 +155,22 @@ export default function Home() {
                 Acesso completo à melhor plataforma de animes do mundo.
               </p>
             </div>
-            <Card className="p-8 rounded-2xl shadow-lg">
-                <div className="grid gap-6 items-center">
-                    <div className="space-y-4">
-                        <h3 className="text-2xl font-black">🟧 Com o plano Crunchyroll Premium você terá:</h3>
-                         <ul className="space-y-3">
-                            {features.map((feature, index) => (
-                                <li key={index} className="flex items-center gap-3">
-                                <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0" />
-                                <span className="text-base text-muted-foreground">{feature}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div className="space-y-4">
+                    <h3 className="text-2xl font-black text-gray-800">🟧 Com o plano Crunchyroll Premium você terá:</h3>
+                     <ul className="space-y-3">
+                        {features.map((feature, index) => (
+                            <li key={index} className="flex items-center gap-3">
+                            <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0" />
+                            <span className="text-base text-muted-foreground">{feature}</span>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
-            </Card>
+                 <div className="flex justify-center">
+                    <Image data-ai-hint="anime streaming" src="https://i.imgur.com/gB53YpW.png" alt="Plataformas de streaming" width={500} height={500} className="rounded-lg shadow-lg" />
+                </div>
+            </div>
           </div>
         </section>
 
@@ -215,10 +216,12 @@ export default function Home() {
                              <Star className="w-4 h-4" /> RECOMENDADO
                         </div>
                         <CardHeader className="text-center p-2">
-                            <div className="flex justify-center my-2">
-                                {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />)}
-                            </div>
-                            <CardTitle className="text-2xl font-black">PLANO COMPLEto</CardTitle>
+                            <CardTitle>
+                               <div className="flex justify-center my-2">
+                                    {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />)}
+                                </div>
+                                <div className="text-2xl font-black">PLANO COMPLETO</div>
+                            </CardTitle>
                             <CardDescription className="text-4xl font-black pt-2" style={{ color: '#facc15' }}>R$27,00</CardDescription>
                             <p className="text-base font-black text-muted-foreground">🎁 BÔNUS EXCLUSIVOS</p>
                         </CardHeader>
@@ -339,7 +342,3 @@ export default function Home() {
       </footer>
     </div>
   );
-
-    
-
-    
