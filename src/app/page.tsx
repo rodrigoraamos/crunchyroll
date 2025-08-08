@@ -94,12 +94,12 @@ export default function Home() {
   ];
 
   const planCompleteFeatures = [
+      { icon: '🎬', text: 'Combo Streaming:' },
       { icon: '🔁', text: 'Acesso vitalício' },
       { icon: '💬', text: 'Suporte VIP 24/7' },
       { icon: '📦', text: 'Atualizações de lançamentos' },
       { icon: '✨', text: 'Novas plataformas futuras' },
       { icon: '✅', text: 'Tudo do plano básico' },
-      { icon: '🎬', text: 'Combo Streaming:' },
   ];
 
   return (
@@ -231,16 +231,20 @@ export default function Home() {
                         </CardHeader>
                         <CardContent className="flex-grow pt-6">
                              <ul className="space-y-3 mb-4">
-                               {planCompleteFeatures.map((feat, index) => (
+                               <li className="flex items-center gap-3">
+                                  <span className="text-xl">🎬</span>
+                                  <span className="text-sm font-bold">Combo Streaming:</span>
+                               </li>
+                               <li className="flex justify-center my-2">
+                                   <Image src="https://i.imgur.com/W82YUws.png" alt="Plataformas de streaming" width={350} height={58} />
+                               </li>
+                               {planCompleteFeatures.slice(1).map((feat, index) => (
                                     <li key={index} className="flex items-center gap-3">
                                     <span className="text-xl">{feat.icon}</span>
                                     <span className="text-sm font-bold">{feat.text}</span>
                                     </li>
                                ))}
                             </ul>
-                            <div className="flex justify-center mt-4">
-                                <Image src="https://i.imgur.com/W82YUws.png" alt="Plataformas de streaming" width={350} height={58} />
-                            </div>
                         </CardContent>
                         <div className="p-6 pt-0">
                              <a href="https://ferramentas-premium4.pay.yampi.com.br/r/C3P2NEJ39K" className="w-full block">
