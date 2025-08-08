@@ -152,7 +152,7 @@ export default function Home() {
                  🎁 O Que Você Vai Receber
               </div>
               <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground font-bold">
-                Acesso completo à melhor plataforma de animes do mundo.
+                Tenha em suas mãos o universo dos animes. Assista sem limites, com lançamentos direto do Japão e a maior biblioteca de títulos à sua disposição.
               </p>
             </div>
              <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -220,13 +220,13 @@ export default function Home() {
                         <CardHeader className="text-center p-2">
                             <CardTitle>
                                <div>
-                                 <div className="flex justify-center my-2">
+                                  <div className="flex justify-center my-2">
                                       {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />)}
                                   </div>
                                   <div className="text-2xl font-black">PLANO COMPLETO</div>
                                </div>
                             </CardTitle>
-                            <CardDescription className="text-4xl font-black pt-2" style={{ color: '#facc15' }}>R$19,90</CardDescription>
+                             <CardDescription className="text-4xl font-black pt-2" style={{ color: '#facc15' }}>R$19,90</CardDescription>
                             <div className="flex justify-center my-2">
                                 <Image src="https://i.imgur.com/W82YUws.png" alt="Plataformas de streaming" width={350} height={58} />
                             </div>
@@ -235,6 +235,14 @@ export default function Home() {
                         <CardContent className="flex-grow pt-6">
                              <ul className="space-y-3 mb-4">
                                {planCompleteFeatures.map((feat, index) => {
+                                    if (feat.text === 'Tudo do plano básico') {
+                                        return (
+                                            <li key={index} className="flex items-center gap-3">
+                                                <span className="text-xl">{feat.icon}</span>
+                                                <span className="text-sm font-bold">{feat.text}</span>
+                                            </li>
+                                        );
+                                    }
                                     if (feat.text === 'Combo Streaming:') {
                                         return (
                                              <li key={index} className="flex items-center gap-3">
@@ -356,3 +364,5 @@ export default function Home() {
       </footer>
     </div>
   );
+
+    
