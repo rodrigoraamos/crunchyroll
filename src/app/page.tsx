@@ -206,7 +206,7 @@ export default function Home() {
                     </CardContent>
                     <div className="p-6 pt-0">
                         <a href="https://ferramentas-premium4.pay.yampi.com.br/r/KBJCK8LUV9" className="w-full block">
-                            <Button className="w-full text-lg font-black rounded-xl px-4 py-6 text-primary-foreground" style={{ backgroundColor: '#FF6A00' }}>
+                            <Button className="w-full text-lg font-black rounded-xl px-4 py-6 bg-green-500 hover:bg-green-600 text-white">
                                 👉 QUERO ESSA OPÇÃO
                             </Button>
                         </a>
@@ -244,7 +244,7 @@ export default function Home() {
                         </CardContent>
                         <div className="p-6 pt-0">
                              <a href="https://ferramentas-premium4.pay.yampi.com.br/r/C3P2NEJ39K" className="w-full block">
-                                <Button className="w-full text-lg font-black rounded-xl px-4 py-4 bg-green-500 hover:bg-green-600 text-white whitespace-normal h-auto">
+                                <Button className="w-full text-lg font-black rounded-xl px-4 py-4 text-primary-foreground whitespace-normal h-auto" style={{ backgroundColor: '#FF6A00' }}>
                                     🚀 SIM, QUERO O COMBO COMPLETO
                                 </Button>
                             </a>
