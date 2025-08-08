@@ -116,13 +116,13 @@ export default function Home() {
               <span className="text-2xl font-black text-primary">OFERTA LIMITADA</span>
             </div>
             <h1 className="text-4xl font-black tracking-tight sm:text-5xl text-gray-800">
-              1 Ano de Crunchyroll Premium MEGA FAN Por Apenas <span className="text-primary">R$10.00</span>
+              Acesso completo à melhor plataforma de animes do mundo.
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-xl text-muted-foreground">
               Assista TODOS os seus animes favoritos sem anúncios, em HD, offline e com lançamentos no mesmo dia do Japão
             </p>
             <div className="mt-8 flex flex-col items-center gap-6">
-               <p className="font-bold text-lg mb-2 text-gray-700 animate-pulse">
+               <p className="font-bold text-lg mb-2 text-red-600 animate-pulse">
                 👇 Assista ao vídeo abaixo para entender como funciona 👇
                </p>
                <div className="w-full max-w-2xl mx-auto">
@@ -227,14 +227,14 @@ export default function Home() {
                                </div>
                             </CardTitle>
                              <CardDescription className="text-4xl font-black pt-2" style={{ color: '#facc15' }}>R$19,90</CardDescription>
+                            <p className="text-base font-black text-muted-foreground">🎁 BÔNUS EXCLUSIVOS</p>
                             <div className="flex justify-center my-2">
                                 <Image src="https://i.imgur.com/W82YUws.png" alt="Plataformas de streaming" width={350} height={58} />
                             </div>
-                            <p className="text-base font-black text-muted-foreground">🎁 BÔNUS EXCLUSIVOS</p>
                         </CardHeader>
                         <CardContent className="flex-grow pt-6">
                              <ul className="space-y-3 mb-4">
-                               {planCompleteFeatures.map((feat, index) => {
+                                {planCompleteFeatures.map((feat, index) => {
                                     if (feat.text === 'Tudo do plano básico') {
                                         return (
                                             <li key={index} className="flex items-center gap-3">
@@ -364,3 +364,5 @@ export default function Home() {
       </footer>
     </div>
   );
+
+    
