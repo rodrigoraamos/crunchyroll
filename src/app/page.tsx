@@ -97,8 +97,8 @@ export default function Home() {
       { icon: '✅', text: 'Tudo do plano básico' },
       { icon: '🎬', text: 'Combo Streaming:' },
       { icon: '🔁', text: 'Acesso vitalício' },
-      { icon: '💬', text: 'Suporte VIP 24/7' },
-      { icon: '📦', text: 'Atualizações de lançamentos' },
+      { icon: '💬', text: 'Garantia extendida e suporte personalizado' },
+      { icon: '📦', text: '30 Dias de Garantia' },
       { icon: '✨', text: 'Novas plataformas futuras' },
   ];
 
@@ -227,10 +227,10 @@ export default function Home() {
                                </div>
                             </CardTitle>
                             <CardDescription className="text-4xl font-black pt-2" style={{ color: '#facc15' }}>R$19,90</CardDescription>
-                            <p className="text-base font-black text-muted-foreground">🎁 BÔNUS EXCLUSIVOS</p>
                             <div className="flex justify-center my-2">
                                 <Image src="https://i.imgur.com/W82YUws.png" alt="Plataformas de streaming" width={350} height={58} />
                             </div>
+                            <p className="text-base font-black text-muted-foreground">🎁 BÔNUS EXCLUSIVOS</p>
                         </CardHeader>
                         <CardContent className="flex-grow pt-6">
                              <ul className="space-y-3 mb-4">
@@ -355,5 +355,4 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  );}
-    
+  );
