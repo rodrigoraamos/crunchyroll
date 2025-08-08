@@ -226,7 +226,7 @@ export default function Home() {
                                   <div className="text-2xl font-black">PLANO COMPLETO</div>
                                </div>
                             </CardTitle>
-                            <CardDescription className="text-4xl font-black pt-2" style={{ color: '#facc15' }}>R$27,00</CardDescription>
+                            <CardDescription className="text-4xl font-black pt-2" style={{ color: '#facc15' }}>R$19,90</CardDescription>
                             <p className="text-base font-black text-muted-foreground">🎁 BÔNUS EXCLUSIVOS</p>
                         </CardHeader>
                         <CardContent className="flex-grow pt-6">
