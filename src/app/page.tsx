@@ -157,7 +157,7 @@ export default function Home() {
             </div>
              <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                 <div>
-                    <Image src="https://placehold.co/600x400.png" alt="Crunchyroll em várias telas" width={600} height={400} className="rounded-lg shadow-lg" data-ai-hint="anime streaming devices" />
+                    <Image src="https://i.imgur.com/StetHIz.jpeg" alt="Crunchyroll em várias telas" width={600} height={400} className="rounded-lg shadow-lg" data-ai-hint="anime streaming devices" />
                 </div>
                 <div className="space-y-4">
                     <h3 className="text-2xl font-black text-gray-800 text-left">🟧 Com o plano Crunchyroll Premium você terá:</h3>
@@ -345,6 +345,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  );
-
+  );}
     
