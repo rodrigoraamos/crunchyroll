@@ -95,7 +95,7 @@ export default function Home() {
 
   const planCompleteFeatures = [
       { icon: '✅', text: 'Tudo do plano básico' },
-      { icon: '🎬', text: 'Combo Streaming:' },
+      { icon: '🎬', text: 'Combo de streaming e ferramentas:' },
       { icon: '🔁', text: 'Acesso vitalício, é pra sempre seu!' },
       { icon: '💬', text: 'Garantia extendida e suporte personalizado' },
       { icon: '📦', text: '30 Dias de Garantia' },
@@ -243,7 +243,7 @@ export default function Home() {
                                             </li>
                                         );
                                     }
-                                    if (feat.text === 'Combo Streaming:') {
+                                    if (feat.text === 'Combo de streaming e ferramentas:') {
                                         return (
                                              <li key={index} className="flex items-center gap-3">
                                                 <span className="text-xl">{feat.icon}</span>
