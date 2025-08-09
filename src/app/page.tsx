@@ -261,7 +261,7 @@ export default function Home() {
                             </ul>
                         </CardContent>
                         <div className="p-6 pt-0">
-                             <a href="https://ferramentas-premium4.pay.yampi.com.br/r/C3P2NEJ39K" className="w-full block">
+                             <a href="https://checkoutdigital.shop/checkout-white-6837/?add-to-cart=6837" className="w-full block">
                                 <Button className="w-full text-lg font-black rounded-xl px-4 py-4 text-primary-foreground whitespace-normal h-auto" style={{ backgroundColor: '#FF6A00' }}>
                                     🚀 SIM, QUERO O COMBO COMPLETO
                                 </Button>
