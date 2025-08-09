@@ -229,7 +229,7 @@ export default function Home() {
                              <CardDescription className="text-4xl font-black pt-2" style={{ color: '#facc15' }}>R$19,90</CardDescription>
                             <p className="text-base font-black text-muted-foreground">🎁 BÔNUS EXCLUSIVOS</p>
                             <div className="flex justify-center my-2">
-                                <Image src="https://i.imgur.com/W82YUws.png" alt="Plataformas de streaming" width={350} height={58} />
+                                <Image src="https://i.imgur.com/KMIAPQr.png" alt="Plataformas de streaming" width={350} height={58} />
                             </div>
                         </CardHeader>
                         <CardContent className="flex-grow pt-6">
