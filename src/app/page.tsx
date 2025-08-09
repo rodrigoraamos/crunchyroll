@@ -116,7 +116,7 @@ export default function Home() {
               <span className="text-2xl font-black text-primary">OFERTA LIMITADA</span>
             </div>
             <h1 className="text-4xl font-black tracking-tight sm:text-5xl text-gray-800">
-              Acesso completo à melhor plataforma de animes do mundo.
+              <span className="bg-yellow-200 px-2 rounded">Acesso completo à melhor plataforma de animes do mundo.</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-xl text-muted-foreground">
               Assista TODOS os seus animes favoritos sem anúncios, em HD, offline e com lançamentos no mesmo dia do Japão
@@ -126,10 +126,12 @@ export default function Home() {
                 👇 Assista ao vídeo abaixo para entender como funciona 👇
                </p>
                <div className="w-full max-w-2xl mx-auto">
-                <div id="vid_688cc51742446e639fafab62" style={{position: 'relative', width: '100%', padding: '176.66666666666666% 0 0'}}>
-                    <img id="thumb_688cc51742446e639fafab62" src="https://images.converteai.net/d5647b15-021e-4678-89a8-e5966099f778/players/688cc51742446e639fafab62/thumbnail.jpg" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block'}} alt="thumbnail" />
-                    <div id="backdrop_688cc51742446e639fafab62" style={{backdropFilter: 'blur(5px)', position: 'absolute', top: 0, height: '100%', width: '100%'}}></div>
-                </div>
+                <a href="#planos" className="block cursor-pointer">
+                  <div id="vid_688cc51742446e639fafab62" style={{position: 'relative', width: '100%', padding: '176.66666666666666% 0 0'}}>
+                      <img id="thumb_688cc51742446e639fafab62" src="https://images.converteai.net/d5647b15-021e-4678-89a8-e5966099f778/players/688cc51742446e639fafab62/thumbnail.jpg" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block'}} alt="thumbnail" />
+                      <div id="backdrop_688cc51742446e639fafab62" style={{backdropFilter: 'blur(5px)', position: 'absolute', top: 0, height: '100%', width: '100%'}}></div>
+                  </div>
+                </a>
                 <Script 
                     id="scr_688cc51742446e639fafab62" 
                     src="https://scripts.converteai.net/d5647b15-021e-4678-89a8-e5966099f778/players/688cc51742446e639fafab62/player.js" 
