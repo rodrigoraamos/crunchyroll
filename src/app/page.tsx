@@ -96,7 +96,7 @@ export default function Home() {
   const planCompleteFeatures = [
       { icon: '✅', text: 'Tudo do plano básico' },
       { icon: '🎬', text: 'Combo Streaming:' },
-      { icon: '🔁', text: 'Acesso vitalício' },
+      { icon: '🔁', text: 'Acesso vitalício, é pra sempre seu!' },
       { icon: '💬', text: 'Garantia extendida e suporte personalizado' },
       { icon: '📦', text: '30 Dias de Garantia' },
       { icon: '✨', text: 'Novas plataformas futuras' },
