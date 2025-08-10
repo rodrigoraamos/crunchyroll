@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Crunchyroll Premium - Oferta Limitada',
+  title: '1 Ano de Crunchyroll Premium MEGA FAN Por Apenas R$10.00',
   description: '1 Ano de Crunchyroll Premium MEGA FAN Por Apenas R$10.00',
 };
 
