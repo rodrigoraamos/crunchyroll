@@ -116,7 +116,7 @@ export default function Home() {
               <span className="text-2xl font-black text-primary">OFERTA LIMITADA</span>
             </div>
             <h1 className="text-4xl font-black tracking-tight sm:text-5xl text-gray-800">
-              1 Ano de Crunchyroll Premium MEGA FAN Por Apenas R$10.00
+              1 Ano de Crunchyroll Premium MEGA FAN Por Apenas <span className="text-primary">R$10.00</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-xl text-muted-foreground">
               Assista TODOS os seus animes favoritos sem anúncios, em HD, offline e com lançamentos no mesmo dia do Japão
