@@ -126,12 +126,12 @@ export default function Home() {
                 👇 Assista ao vídeo abaixo para entender como funciona 👇
                </p>
                <div className="w-full max-w-2xl mx-auto">
-                <a href="#planos" className="block cursor-pointer">
+                <div className="block cursor-pointer">
                   <div id="vid_688cc51742446e639fafab62" style={{position: 'relative', width: '100%', padding: '176.66666666666666% 0 0'}}>
                       <img id="thumb_688cc51742446e639fafab62" src="https://images.converteai.net/d5647b15-021e-4678-89a8-e5966099f778/players/688cc51742446e639fafab62/thumbnail.jpg" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block'}} alt="thumbnail" />
                       <div id="backdrop_688cc51742446e639fafab62" style={{backdropFilter: 'blur(5px)', position: 'absolute', top: 0, height: '100%', width: '100%'}}></div>
                   </div>
-                </a>
+                </div>
                 <Script 
                     id="scr_688cc51742446e639fafab62" 
                     src="https://scripts.converteai.net/d5647b15-021e-4678-89a8-e5966099f778/players/688cc51742446e639fafab62/player.js" 
